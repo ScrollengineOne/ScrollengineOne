@@ -61,21 +61,21 @@ from utils.plot import plot_waveform
 # }
 
 # --- Profile 4: Raw Collapse Burn (Max Pressure) ---
-params = {
-     "mass": 1.0,
-     "spring_const": 1.0,
-     "damping": 0.01,
-     "drive_amp": 2.0,
-     "drive_freq": 1.0,
-     "drive_phase": 0.0,
-     "breath_rate": 1.8,
-     "hum_amplitude": 2.0,
-     "intention_clarity": 1.0,
-     "emotion": "grief",
-     "geometry": "dome",
-     "buzz_harmonics_intensity": 1.0,
-     "use_memory": True
- }
+#params = {
+#     "mass": 1.0,
+#     "spring_const": 1.0,
+#     "damping": 0.01,
+#     "drive_amp": 2.0,
+#     "drive_freq": 1.0,
+#     "drive_phase": 0.0,
+#     "breath_rate": 1.8,
+#     "hum_amplitude": 2.0,
+#     "intention_clarity": 1.0,
+#     "emotion": "grief",
+#     "geometry": "dome",
+#     "buzz_harmonics_intensity": 1.0,
+#     "use_memory": True
+# }
 
 # === Time Setup ===
 t = np.linspace(0, 20, 2000)

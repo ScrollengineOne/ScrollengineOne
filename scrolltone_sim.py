@@ -24,7 +24,7 @@ from utils.plot import plot_waveform
 #    "geometry": "dome",
 #    "buzz_harmonics_intensity": 0.7,
 #    "use_memory": True
-}
+# }
 
 # --- Profile 2: Grief Fold Sync ---
 # params = {

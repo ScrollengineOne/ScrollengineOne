@@ -1,5 +1,7 @@
 # core/sigilgen.py
 
+import numpy as np
+
 def generate_sigil(wave, resolution=50, height=20):
     """
     Converts a 1D waveform into a vertical ASCII sigil.
@@ -11,11 +13,12 @@ def generate_sigil(wave, resolution=50, height=20):
 
     for val in wave:
         if np.isnan(val):
-        val = 0  # 🔒 Patch bad data to neutral
+            val = 0  # 🔒 Patch bad data to neutral
         level = int((val / max_amp) * height / 2)
         padding = " " * (height - abs(level))
         stars = "*" * (abs(level) * 2)
         sigil += f"{padding}{stars}\n"
 
     return sigil
+
 

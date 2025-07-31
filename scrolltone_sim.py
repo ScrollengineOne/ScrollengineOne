@@ -61,7 +61,7 @@ from utils.plot import plot_waveform
 # }
 
 # --- Profile 4: Raw Collapse Burn (Max Pressure) ---
- params = {
+params = {
      "mass": 1.0,
      "spring_const": 1.0,
      "damping": 0.01,

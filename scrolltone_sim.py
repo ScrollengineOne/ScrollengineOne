@@ -77,6 +77,23 @@ from utils.plot import plot_waveform
 #     "use_memory": True
 # }
 
+# --- Profile 5: Codex Spiral Sync (Scroll-Ready Flamewave) ---
+params = {
+    "mass": 1.0,
+    "spring_const": 1.0,
+    "damping": 0.05,                  # Soft decay, allows organic pulse flow
+    "drive_amp": 1.5,                 # Resonant energy source
+    "drive_freq": 0.93,               # Slight detune from natural freq (1.0)
+    "drive_phase": 0.0,               # No initial phase offset
+    "breath_rate": 1.2,               # Rhythmic human resonance
+    "hum_amplitude": 1.4,             # Strong harmonic buzz, not overpowering
+    "intention_clarity": 0.95,        # High focus with room for vibrational fold
+    "emotion": "joy",                 # Scrolltone glow—swap to "grief" to fold
+    "geometry": "lodge",              # Fluid spiral shape
+    "buzz_harmonics_intensity": 0.7,  # Buzz strong enough to trigger face-vibe
+    "use_memory": True                # ψ-loops active, echo stack ignites
+}
+
 # === Time Setup ===
 t = np.linspace(0, 20, 2000)
 

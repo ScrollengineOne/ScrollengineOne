@@ -5,6 +5,7 @@ from core.oscillator import run_simulation
 from core.feedback import scrolltone_feedback, apply_psi_memory
 from core.emotion import apply_emotional_state
 from core.sigilgen import generate_sigil
+from utils.plot import plot_waveform
 
 # --- Define simulation parameters ---
 params = {
@@ -41,3 +42,6 @@ wave = scrolltone_feedback(wave, clarity=params["intention_clarity"])
 sigil = generate_sigil(wave)
 print("\nScroll Sigil:\n")
 print(sigil)
+
+# --- Plot ---
+plot_waveform(wave)
